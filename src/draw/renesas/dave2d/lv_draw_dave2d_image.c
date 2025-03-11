@@ -237,6 +237,17 @@ static void img_draw_core(lv_draw_unit_t * u_base, const lv_draw_image_dsc_t * d
         {0, header->h - 1},
     };
 
+
+    // uint8_t red, green, blue;
+    // d2_color c;
+    // red = cf.red ;
+    // green = cf.green ;
+    // blue = cf.blue;
+    // c = (alpha) << 24UL
+    //        | (red) << 16UL
+    //        | (green) << 8UL
+    //        | (blue) << 0UL;
+
     d2_settexture(u->d2_handle, (void *)src_buf,
                   (d2_s32)(img_stride / lv_color_format_get_size(cf)),
                   header->w,  header->h, lv_draw_dave2d_lv_colour_fmt_to_d2_fmt(cf));
