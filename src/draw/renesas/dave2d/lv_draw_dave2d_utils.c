@@ -67,7 +67,7 @@ d2_color  lv_draw_dave2d_lv_colour_to_d2_colour(lv_color_t color)
 d2_s32 lv_draw_dave2d_cf_fb_get(void)
 {
     d2_s32 d2_fb_mode = 0;
-    switch(g_display0_cfg.input->format) {
+    switch(LV_DISPLAY_INPUT_FORMAT) {
         case    DISPLAY_IN_FORMAT_16BITS_RGB565: ///< RGB565,   16 bits
             d2_fb_mode = d2_mode_rgb565;
             break;

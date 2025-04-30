@@ -23,11 +23,11 @@ extern "C" {
 #include "../../lv_draw_line.h"
 #include "../../lv_draw_arc.h"
 #include "../../lv_draw_label.h"
-#include "../../lv_draw_image.h"
 #include "../../lv_draw_triangle.h"
 #include "../../lv_draw_buf.h"
-
-
+#include "../../lv_draw_image.h"
+#include "../../lv_draw_image_private.h"
+#include "../../../misc/lv_area_private.h"
 
 /*********************
  *      DEFINES
